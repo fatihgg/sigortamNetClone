@@ -1,0 +1,80 @@
+body{
+padding: 0;
+margin: 0;
+color: #1D1D1D;
+font-size: 1rem;
+background-color: #fff;
+}
+.MuiContainer-root {
+   align-items: center;
+    justify-content: space-between; 
+}
+img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+.css-1e3jqh{
+    background-color: #fff; /* Arka plan rengini tanımla */
+    color: #fff;
+  /*  box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2)  */
+}
+
+body{
+margin: 0;
+padding: 0;
+max-width: 100%;
+width: 100%;
+background-color: #fff;
+position: relative;
+}
+header{
+margin: 0;
+background-color: #F8F9FA;
+}
+main{
+display: block;
+unicode-bidi: isolate;
+}/*
+footer{
+
+}
+*/
+.navbar-nav {
+    white-space: nowrap;
+}
+.griAlan{
+    background-color: #293349;
+    width: 100%;
+    position: relative;
+}
+.css-1aqbj7p{
+    background-color: #F6F8FF;
+    width: 100%;
+    max-width: 100%;
+}
+.element-1 {
+    position: absolute;
+    top: 50px;
+    left: 20%;
+}
+.element-2 {
+    position: absolute;
+    right: 20%;
+    top: 50px;
+}
+
+
+.css-1u594y4{
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: auto;
+    position: relative;
+    z-index: 3;
+    right: 0;
+}
+
