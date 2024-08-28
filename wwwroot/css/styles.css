@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body{
 padding: 0;
 margin: 0;
 color: #1D1D1D;
 font-size: 1rem;
 background-color: #fff;
+max-width: 100%;
+width: 100%;
+background-color: #fff;
+position: relative;
 }
 .MuiContainer-root {
    align-items: center;
@@ -19,14 +25,6 @@ img {
   /*  box-shadow: 0px 10px 0 rgba(0, 0, 0, 0.2)  */
 }
 
-body{
-margin: 0;
-padding: 0;
-max-width: 100%;
-width: 100%;
-background-color: #fff;
-position: relative;
-}
 header{
 margin: 0;
 background-color: #F8F9FA;
@@ -45,6 +43,7 @@ footer{
 .griAlan{
     background-color: #293349;
     width: 100%;
+    height: 126px;
     position: relative;
 }
 .css-1aqbj7p{
@@ -54,13 +53,17 @@ footer{
 }
 .element-1 {
     position: absolute;
+    margin-left: auto;
+    margin-right: auto;;
     top: 50px;
-    left: 20%;
+    left: 21.5%;
 }
 .element-2 {
     position: absolute;
-    right: 20%;
-    top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 21%;
+    top: 44px;
 }
 
 
@@ -77,4 +80,357 @@ footer{
     z-index: 3;
     right: 0;
 }
+.slick-list{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    top: 65px;
+}
+.css-56k8jx{
+    position:relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #F0F0F0;
+}
+.css-1qsxih2{
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+#carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease;
+    width: 1032px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  #customCarousel{
+    display: flex;
+  width: 1032px; /* 5 görsel x 170px genişlik + boşluklar */
+  overflow: hidden;
+  margin: 0 auto; /* Ortaya hizalar */
+  position: relative;
+  }
+  
+  .carousel-inner{
+    overflow: hidden;
+    width: 1600px;
+    justify-content: center;
+  }
+ 
+  .carousel-item.active {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #customCarousel .carousel .slide {
+    overflow: hidden;
+    justify-content: center;
+  }
 
+  #carouselPrev,  #carouselNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background:url('https://www.techcareer.net/assets/images/common/pagination-icon.svg');
+    background-repeat: no-repeat;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  #carouselPrev  {
+    left: 10px; /* Butonların sola hizalanması */
+    transform:translateY(-50%) rotate(180deg);
+    content: "←";
+  }
+
+  #carouselPrev::before  {
+    opacity: 1;
+    color:#fff;
+  }
+  
+  #carouselNext {
+    right: 10px; /* Butonların sağa hizalanması */
+  }
+  #carouselNext::before {
+    opacity: 1;
+    color:#fff;
+  }
+  span .carousel-control-prev-icon{
+    display: none;
+  }
+.customCarousel #carouselPrev .carousel-control-prev{
+    background-color: aqua;
+}
+.css-1mua0o4{
+    background-color: #F6F6F6;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.css-1qsxih2{
+    /*width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;*/
+    padding: 16px; /* Padding değerini ihtiyacınıza göre ayarlayın */
+    max-width: 1200px; /* Genişliği ekran boyutuna göre ayarlayın */
+    margin: 0 auto; /* Ortalamak için auto margin kullanın */
+}
+.css-1sg0zbq{
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 0.25px;
+    line-height: 1.2;
+    font-family: Roboto, sans-serif;
+    text-align: center;
+    margin-bottom: 32px;
+    color: #1D1D1D;
+}
+h2{
+    display: block;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+
+}
+.css-hvihbn {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+ /*   margin-top: -20px; */
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.css-adfut0{
+    margin:0;
+    font:inherit;
+    color:#00C26D;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+}
+.css-9s7n10 {
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    margin-top:-60px;
+    padding: 16px;
+    padding-bottom: 16px;
+}
+
+.css-cxrmjv {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 7px;
+    padding-right: 7px;
+    white-space: nowrap;
+}
+.css-1d3bbye{
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.css-1coxk5r {
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-basis: 58.333333%;
+    -ms-flex-preferred-size: 58.333333%;
+    flex-basis: 58.333333%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 58.333333%;
+    padding: 16px;
+    padding-right: 0px;
+}
+.css-1l56znf {
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-basis: 41.666667%;
+    -ms-flex-preferred-size: 41.666667%;
+    flex-basis: 41.666667%;
+    -webkit-box-flex: 0;
+    -webkit-flex-grow: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    max-width: 41.666667%;
+    padding: 16px;
+}
+.card-img-top {
+    object-fit: contain;
+}
+.chip {
+    margin: 2px;
+    padding: 5px 10px;
+    border: 1px solid #6c757d;
+    border-radius: 16px;
+    background-color: #f8f9fa;
+    color: #6c757d;
+    display: inline-block;
+}
+.chip.secondary {
+    border-color: #007bff;
+    color: #007bff;
+}
+.full-width {
+    width: 100%;
+}
+.divider {
+    border-top: 1px solid #dee2e6;
+    margin: 20px 0;
+}
+.card-container {
+    margin-bottom: 20px;
+}
+.card-img-top{
+    margin-top: 10px;
+}
+
+@media (min-width: 600px) {
+    .css-1qsxih2 {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+@media (min-width: 1200px) {
+    .css-1qsxih2 {
+        max-width: 1200px;
+    }
+}
+.css-d7xnu1 {
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.display-5 {
+    font-size: 2.5rem; /* Başlığı daha büyük hale getirmek için */
+    font-weight: 600;
+}
+.css-1u3t278 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    width: calc(100% + 24px);
+    margin-left: -24px;
+}
+.css-1lmghtu {
+    box-sizing: border-box;
+    margin: 0;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+.css-1qm1lh {
+    margin-bottom: 16px;
+}
+.css-nl5o9c {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 8px;
+    word-break: break-word;
+}
+.css-1g4jgci {
+    margin: 0;
+    font-size: 0.875rem;
+    letter-spacing: 0.17px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    word-break: break-word;
+}
+.css-be7eom {
+    margin: 0;
+    font-size: 1.5625rem;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 1.2;
+    font-family: Roboto, sans-serif;
+}
+.css-7t82bl {
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    line-height: 1.4;
+    font-family: Roboto, sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    color: #00C26D;
+}
+@media (min-width: 900px) {
+    .css-1s4dy3l {
+        background: #EFFFEB url('https://www.techcareer.net/assets/images/pages/careerGuide/common/cta-bg-desktop.svg') right bottom no-repeat;
+        max-height: 500px;
+    }
+}
