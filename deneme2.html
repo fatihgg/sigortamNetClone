@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wwwroot/bootstrap/css/bootstrap.min.css">
+    <style>
+    #carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    }
+
+    .card {
+    flex: 0 0 auto;
+    width: 540px;
+    margin-right: 10px;
+    }
+    #carouselPrev, #carouselNext {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(https://www.techcareer.net/assets/images/common/pagination-icon.svg);
+    background-repeat: no-repeat;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 2;
+}
+    #carouselPrev {
+    left: 10px;
+    transform: translateY(-50%) rotate(180deg);
+    content: "←";
+    }
+    
+
+
+
+    </style>
+</head>
+<body>
+    <div class="muiBox-root css-56k8jx">
+        <div class="css-1qsxih2">                   
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center overflow-hidden" id="testimonial-carousel-container">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img width="156" height="156" src="wwwroot/img/user.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title 1</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text">Serhat Karadağ<small class="text-body-secondary">Hyper Company Front-End Angular Bootcamp</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img width="156" height="156" src="wwwroot/img/user.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title 2</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center overflow-hidden" id="testimonial-carousel-container">
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img width="156" height="156" src="wwwroot/img/user.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title 3</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img width="156" height="156" src="wwwroot/img/user.jpg" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title 4</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button id="carouselPrev" class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="position: absolute; top: 50%; left: -100px;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button id="carouselNext" class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="position: absolute; top: 50%; right: -100px;">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>            
+        </div>
+    </div>    
+    <script src="wwwroot/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <script src="wwwroot/js/index.js"></script>
+</body>
+</html>
