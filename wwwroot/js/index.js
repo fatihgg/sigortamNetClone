@@ -65,7 +65,7 @@ let customStartIndex = 0;
 
 function slideCustomCarousel(direction) {
     const images = customCarousel.querySelectorAll('img');
-    const imageWidth = 170; // Görsel genişliği
+    const imageWidth = 172; // Görsel genişliği
 
     if (direction === 'next') {
         customCarousel.style.transition = 'transform 0.5s ease';
@@ -87,12 +87,13 @@ function slideCustomCarousel(direction) {
 }
 
 // Butonlara click event ekleme
-document.getElementById('carouselNext').addEventListener('click', () => slideCustomCarousel('next'));
-document.getElementById('carouselPrev').addEventListener('click', () => slideCustomCarousel('prev'));
+document.getElementById('carouselNext1').addEventListener('click', () => slideCustomCarousel('next'));
+document.getElementById('carouselPrev1').addEventListener('click', () => slideCustomCarousel('prev'));
 
-// Otomatik kaydırma (opsiyonel)
-//const interval = 3000; // 3 saniye
-//setInterval(() => slideCustomCarousel('next'), interval);
+const interval = 4000; // 5 saniye
+setInterval(() => slideCustomCarousel('next'), interval);
+
+
 
 
 const testimonialCarousel = document.querySelector('#testimonialCarousel');
@@ -122,3 +123,53 @@ function slideTestimonialCarousel(direction) {
 // Butonlara click event ekleme
 document.getElementById('carouselNext').addEventListener('click', () => slideTestimonialCarousel('next'));
 document.getElementById('carouselPrev').addEventListener('click', () => slideTestimonialCarousel('prev'));
+
+
+/*
+const anaSlider = document.querySelector('#anaSlider .carousel-inner .carousel-item .d-flex');
+let anaSliderIndex = 0;
+
+function slideanaSlider(direction) {
+    const images = anaSlider.querySelectorAll('img');
+    const imageWidth = 172; // Görsel genişliği
+
+    if (direction === 'next') {
+        anaSlider.style.transition = 'transform 0.5s ease';
+        anaSlider.style.transform = `translateX(-${imageWidth}px)`; // Sağa kaydırma
+        setTimeout(() => {
+            anaSlider.style.transition = 'none';
+            anaSlider.style.transform = 'translateX(0)';
+            anaSlider.appendChild(images[0]); // İlk görseli sona taşı
+        }, 500); // 0.5 saniye sonra kaydırmayı tamamla
+    } else if (direction === 'prev') {
+        anaSlider.style.transition = 'none';
+        anaSlider.insertBefore(images[images.length - 1], images[0]); // Son görseli başa taşı
+        anaSlider.style.transform = `translateX(-${imageWidth}px)`;
+        setTimeout(() => {
+            anaSlider.style.transition = 'transform 0.5s ease';
+            anaSlider.style.transform = 'translateX(0)'; // Sola kaydırma
+        }, 0);
+    }
+}
+
+// Butonlara click event ekleme
+document.getElementById('carouselNext2').addEventListener('click', () => slideanaSlider('next'));
+document.getElementById('carouselPrev2').addEventListener('click', () => slideanaSlider('prev'));
+
+setInterval(() => slideanaSlider('next'), interval);
+
+*/
+
+
+
+
+
+
+
+
+
+// dot başlangıç
+
+
+
+

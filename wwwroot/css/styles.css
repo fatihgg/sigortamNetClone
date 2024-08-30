@@ -59,18 +59,20 @@ footer{
     margin-left: auto;
     margin-right: auto;;
     top: 50px;
-    left: 21.5%;
+    left: 21%;
 }
 .element-2 {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    right: 21%;
+    right: 20.5%;
     top: 44px;
 }
 
 
 .css-1u594y4{
+    padding-left: 0;
+    padding-right: 0;
     width: 100%;
     margin-left: auto;
     box-sizing: border-box;
@@ -91,6 +93,16 @@ footer{
     display: block;
     top: 65px;
 }
+.slick-list {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 0px 16px 16px 0px;
+    border-image-slice: 0 16 16 0;
+    border-image-source: linear-gradient(-125deg, transparent 13px, #00C26D 0 calc(100% - 9px), transparent 0);
+        
+    }
 .css-56k8jx{
     position:relative;
     width: 100%;
@@ -139,7 +151,7 @@ footer{
     justify-content: center;
   }
 
-  #carouselPrev,  #carouselNext {
+  #carouselPrev,#carouselPrev1,#carouselPrev2,  #carouselNext,#carouselNext1,#carouselNext2 {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -152,30 +164,28 @@ footer{
     z-index: 2;
   }
   
-  #carouselPrev  {
-    left: 10px; /* Butonların sola hizalanması */
+  #carouselPrev,#carouselPrev1,#carouselPrev2  {
+    left: 30px; /* Butonların sola hizalanması */
     transform:translateY(-50%) rotate(180deg);
     content: "←";
   }
 
-  #carouselPrev::before  {
+  #carouselPrev::before,#carouselPrev1::before,#carouselPrev2::before  {
     opacity: 1;
     color:#fff;
   }
-  
-  #carouselNext {
+ 
+
+  #carouselNext,#carouselNext1,#carouselNext2 {
     right: 10px; /* Butonların sağa hizalanması */
   }
-  #carouselNext::before {
+  #carouselNext::before,#carouselNext1::before,#carouselNext2::before {
     opacity: 1;
     color:#fff;
   }
   span .carousel-control-prev-icon{
     display: none;
   }
-.customCarousel #carouselPrev .carousel-control-prev{
-    background-color: aqua;
-}
 .css-1mua0o4{
     background-color: #F6F6F6;
     padding-top: 48px;
@@ -383,9 +393,12 @@ h2{
 .css-1lmghtu {
     box-sizing: border-box;
     margin: 0;
+    display: flex;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 .css-1qm1lh {
     margin-bottom: 16px;
@@ -460,18 +473,8 @@ h2{
     font-family: Roboto, sans-serif;
     margin-bottom: 32px;
 }
-.col-md-4 img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 4px; /* Yuvarlak kenarları korumak için */
-}
-/* #testimonial-carousel-container{
-    width: 100%;
-    max-width: 900px;
-    margin-right: 350px;
 
-} */ /*
+ /*
 .css-u7q6xk{
     
 }
@@ -479,12 +482,21 @@ h2{
 .MuiBox-root.css-18j1132 .MuiContainer-root.css-1qsxih2 .carousel-inner .carousel-item .d-flex .row.g-0 {
     
 } */
+
 #bodyAuthor{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
 }
+.css-18j1132 .carousel-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 4px; /* Yuvarlak kenarları korumak için */
+}
+
+
 .col-md-8 {
     overflow-y: hidden; /* col-md-8 divi içinde scrollbar oluşmasını engeller */
 }
@@ -499,10 +511,488 @@ h2{
     display: flex;
     align-items: center;
     position: relative;
+    margin: 40px;
 }
 .svgTirnak {
-    position:relative;
-    margin-right: 8px; /* SVG ile isim arasındaki boşluk */
+    position:absolute;
+    margin-right: 8px;
     top:0;
-    left:0;
+    left:-40px;
 }
+.ms-1 .card-text + .card-text{
+    margin-top:0;
+}
+
+.css-1i4mfz {
+    display: inline-flex; /* Elemanları yatay olarak hizalar */
+    align-items: center;  /* Dikey hizalamayı ortalar */
+    text-decoration: none; /* Alt çizgiyi kaldırır */
+    color: #00C26D;
+}
+
+.css-1i4mfz .css-pt151d {
+    margin-left: 8px; /* İkon ile metin arasında boşluk bırakır */
+    display: inline-flex; /* İkonun hizalanmasını sağlar */
+}
+
+.css-vubbuv {
+    width: 20px;
+    height: 20px;
+    color:#00C26D;
+}
+.yesilButon{
+    font-weight: 500;
+}
+.css-fd2ajh{
+    background-color: #293349;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    text-align: center;
+    color:#fff;
+}
+.css-1e8t2v3 {
+    margin:0;
+    font-weight: 500;
+    letter-spacing: 0.25px;
+    line-height: 1.2;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 16px;
+}
+.css-blwhuo {
+    margin: 0;
+    font-size: 1.25rem;
+    line-height: 1.33;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+form{
+    display: block;
+    margin-top:0em;
+
+}
+/*
+.css-1l4w6pd {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+    
+.css-1xp7el {
+    position: relative;
+}
+.css-1tenbrk {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    min-width: 0;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    vertical-align: top;
+    width: 100%;
+}
+.css-dafp8o {
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.4375em;
+    color: #1D1D1D;
+    box-sizing: border-box;
+    position: relative;
+    cursor: text;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    border-radius: 4px;
+    padding-left: 14px;
+    background-color: #fff;
+    padding-right: 112px;
+}
+.css-bocs3y {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    background-color: transparent;
+    outline: 0;
+    border: 0;
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: inherit;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0.9375rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    min-width: 64px;
+    padding: 8px 22px;
+    border-radius: 4px;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    color: #fff;
+    background-color: #00C26D;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: none;
+    font-weight: 500;
+    text-transform: initial;
+    letter-spacing: 0.025rem;
+    font-size: 0.938rem;
+}
+.css-w0pj6f {
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    z-index: 0;
+    inset: 0px;
+    border-radius: inherit;
+}
+.css-1a6giau {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    height: 0.01em;
+    max-height: 2em;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.54);
+    margin-right: 8px;
+}
+.css-ihdtdm {
+    float: unset;
+    width: auto;
+    overflow: hidden;
+    padding: 0;
+    line-height: 11px;
+    -webkit-transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+    transition: width 150ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+}
+legend {
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    unicode-bidi: isolate;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+fieldset {
+    display: block;
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+    padding-block-start: 0.35em;
+    padding-inline-start: 0.75em;
+    padding-inline-end: 0.75em;
+    padding-block-end: 0.625em;
+    min-inline-size: min-content;
+    border-width: 2px;
+    border-style: groove;
+    border-color: rgb(192, 192, 192);
+    border-image: initial;
+}
+.css-igs3ac {
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    top: -5px;
+    left: 0;
+    margin: 0;
+    padding: 0 8px;
+    pointer-events: none;
+    border-radius: inherit;
+    border-style: solid;
+    border-width: 1px;
+    overflow: hidden;
+    min-width: 0%;
+    border-color: rgba(0, 0, 0, 0.23);
+}
+    */
+
+.css-oglgd8{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    font-family: Roboto, sans-serif;
+    line-height: 1.75;
+    margin-top: 32px;
+    color: #00C26D;
+}    
+.input-group {
+    max-width: 500px;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+  }
+  
+  .input-group-text {
+    background-color: #f1f1f1;
+  }
+  
+  
+  
+  .btn-success {
+    border-radius: 0;
+    background-color: #00C26D;
+    border-radius: 10px;
+  }
+  
+  input::placeholder {
+    color: #999;
+  }
+  .css-1n2xzy7 {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Dikey hizalama */
+    margin: auto;
+    margin-bottom: 5px;
+}
+.css-1792bpf {
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+p{
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        unicode-bidi: isolate;
+}
+.css-t9ugv8 {
+    width: 1px; /* Dikey çizgi gibi görünmesi için */
+    height: 24px; /* İhtiyaca göre yüksekliği ayarlayın */
+    background-color: #D8D8D8;
+    margin: 0 12px; /* Çizginin iki tarafındaki boşluk */
+    border: none; /* Varsayılan hr stilini kaldırır */
+    /* margin: 0;
+    flex-shrink: 0;
+    border-width: 0;
+    border-style: solid;
+    border-color: #D8D8D8;
+    border-bottom-width: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: auto;
+    border-right-width: thin;
+    -webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+    align-self: stretch; */
+}
+hr {
+    display: block;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    unicode-bidi: isolate;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+.css-1792bpf, .css-1mbxzer {
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+}
+.css-4v6a2j {
+    margin: 0;
+    font: inherit;
+    color: #fff;
+    -webkit-text-decoration: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+#footer {
+    display: flex;
+    position: relative;
+    margin-left: 200px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    height: 500px;
+}
+
+#footer h5 {
+    font-size: 16px;
+    color: #6c757d;
+    opacity: 0.6;
+    
+}
+
+#footer ul {
+    padding-left: 0;
+}
+
+#footer ul li a {
+    color: #1D1D1D;
+    text-decoration: none;
+    font-weight: 500;
+    ;
+}
+
+#footer ul li a:hover {
+    text-decoration: solid;
+}
+
+#footer-divider {
+    border-color: #d8d8d8;
+}
+
+#language-switcher .list-inline-item a {
+    color: #000;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#language-switcher .list-inline-item a:hover {
+    color: #007bff;
+}
+
+.fab {
+    font-size: 18px;
+    color: #666;
+    margin-right: 10px;
+}
+
+.fab:hover {
+    color: #007bff;
+}
+
+#footer-social img {
+    max-width: 150px;
+}
+
+#footer p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+#techcareer ul li {
+    font-size: 0.875rem;
+    margin-bottom: 15px; 
+}
+#apply ul li {
+    font-size: 0.875rem;
+    margin-bottom: 15px; 
+}
+#for-you ul li {
+    font-size: 0.875rem;
+    margin-bottom: 15px; 
+}
+#privacy-policy ul li {
+    font-size: 0.875rem;
+    margin-bottom: 15px; 
+}
+.sosyal-medya-baslik{
+    margin: 0;
+    font-size: 0.875rem;
+    letter-spacing: 0.17px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.43;
+    color: #878787;
+    text-transform: uppercase;
+    margin-bottom: 17.6px;
+}
+#footer-center div{
+    font-size:0.75rem;
+}
+.mail{
+    text-decoration:none;
+    color:#878787;
+}
+.small-text{
+    margin: 0;
+    font-size: 1rem;
+    letter-spacing: 0.15px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: justify;
+    color: #878787;
+    font-size: 0.55rem;
+    word-wrap: break-word;
+}
+.griAlan {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.css-1mua0o4 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 400px;
+  }
+  .css-1mua0o4 .card .d-flex {
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8125rem;
+  }
+  .css-1mua0o4 .card .card-title{
+    justify-content: center;
+    text-align: center;
+  }
+
+  .css-1mua0o4 .card img{
+    justify-content: center;
+    text-align: center;
+  }
+  .buyukResim {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background:url('https://www.techcareer.net/assets/images/call-to-actions/pages/user-stories/background.png');
+  }

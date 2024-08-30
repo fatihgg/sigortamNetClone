@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAS1BMVEUpM0kAwm0Axm4Aw20UjV8lPUwqK0gpMUkqLkgqKEciUlAcaVYUj18Aym8Vi14mOUsfZlURlWEdYlQFsmkqJUcQnWMbbFcfZFQoNkrglZWDAAAAgklEQVQ4jeXTQRKDIAwFUBKqRCAata29/0kr6jJkYadu/Nu8YUgIzl2cQETBqse0TI0h2syIswUeCB6MI34FgZ59AUOrdxKiTC8EgPciURNdRg8l3mPudABHKmBk3ggzjxqgdYz7HSRFOtOFu2CS9wFladEA69qLpE+1vn8c9SH/mi+opgW2n9YPXgAAAABJRU5ErkJggg==" type="image/x-icon" />
+    <link rel="stylesheet" href="wwwroot/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="wwwroot/css/styles.css">
+    <style>
+    main{
+        background-color:#F6F6F6 ;
+    }
+    .disDiv{
+            padding: 0 24px;
+    }
+    .outer-div {
+            padding: 24px;
+        }
+    .enDis {
+            justify-content: center; /* Ortaya hizalamak için yatayda */
+   
+  
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+    }
+    .custom-section {
+    background-image: url('https://www.techcareer.net/assets/images/call-to-actions/pages/user-stories/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    }
+    .left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    }
+
+    .left-column h1 {
+    margin-top: 20px;
+    color:white;
+    font-weight: 600;
+    }
+    .left-column span{
+        color:#00C26D;
+        font-weight: 500;
+    }
+
+    .vector-image {
+    width: 320px;
+    height: 250px;
+    }
+    .custom-section .left-column .breadcrumb a {
+        color:white;
+        text-decoration: none;
+    }
+    .custom-section .left-column p {
+        color:white;
+        font-size: 1rem;
+        font-family: Roboto, sans-serif;
+        line-height: 1.5;
+        display: flex;
+    }
+    .custom-section .left-column button {
+        color:white;
+        font-size: 1rem;
+        background-color: #00C26D;
+        width: 150px;
+        height: 30px;
+    }
+    .left-column .breadcrumb{
+        margin-top: 0;
+    }
+
+
+    </style>
+    <title>Bizi Katılımcılardan Dinle</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="css-1e3jqh">
+            <div class="MuiContainer-root">
+                <div class="toolbar">
+                    <div class="container-fluid">
+                        <div class="navbar navbar-expand-lg bg-body rounded">
+                            <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+                                <a class="navbar-brand col-lg-2 p-2" href="#"><img loading="lazy" width="185" height="20" src="https://www.techcareer.net/assets/images/common/techcareer-logo.svg"></a>
+                                <div class="col-lg-3 me-5">
+                                    <form class="d-flex" role="search">
+                                        <input class="form-control me-5" type="search" placeholder="Etkinlik, İş İlanı, Blog Ara" aria-label="Etkinlik, İş İlanı, Blog Ara">
+                                    </form>
+                                </div>
+                                <ul class="navbar-nav col-lg-3 justify-content-lg-center">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Etkinlikler</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Bootcamp</a></li>
+                                            <li><a class="dropdown-item" href="#">Hackathon</a></li>
+                                            <li><a class="dropdown-item" href="#">Hiring Challenge</a></li>
+                                            <li><a class="dropdown-item" href="#">Tüm Etkinlikler</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">İş İlanları</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link">Eğitimler</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Komünite</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Komüniteye Katıl</a></li>
+                                            <li><a class="dropdown-item" href="#">TDC</a></li>
+                                            <li><a class="dropdown-item" href="#">Blog</a></li>
+                                            <li><a class="dropdown-item" href="#">Podcast</a></li>
+                                            <li><a class="dropdown-item" href="#">Kariyer Rehberi</a></li>
+                                            <li><a class="dropdown-item" href="#">Teknik Sözlük</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a href="#" class="nav-link">Şirketler</a>
+                                    </li>
+                                </ul>
+                                <div class="d-lg-flex col-lg-3 justify-content-lg-end" style="font-weight:200;">
+                                    <button class="btn " style="background-color: #00C26D; color: white; ">Giriş / Üye Ol</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </div>
+        <main>
+            <div class="disDiv">
+            <div class="container-fluid custom-section d-flex align-items-center">
+                <div class="container">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-7 left-column">
+                            <nav class="mt-0" aria-label="breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item"><a href="#">Anasayfa</a></li>
+                                    <li class="breadcrumb-item active" aria-current="page"><a href="">Bizi Katılımcılardan Dinle</a></li>
+                                </ol>
+                            </nav>
+                            <div>
+                                <h1>Bizi <span>Katılımcılardan</span> Dinle</h1>
+                            </div>
+                            
+                            <p>Yeni mezun adayların yeteneklerini geliştirmelerini ve yeni iş fırsatlarına ulaşmalarını hedefleyen Techcareer.net'i, etkinliklerine katılan birçok adaydan dinleyin</p>
+                            <button class="btn">Keşfet</button>
+                        </div>
+                        <div class="col-md-4 right-column d-flex justify-content-end">
+                            <img src="https://www.techcareer.net/assets/images/call-to-actions/pages/user-stories/vector.svg" class="img-fluid vector-image" alt="Vektör Resmi">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Yorum Alanı Başlıyor -->
+
+        <div class="enDis">
+            <div class="outer-div">
+                <div class="row">
+                    <div class="col-12 col-md-3 mb-3">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-12 col-md-3 mb-3">
+                        <div class="card mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                              <div class="col-md-4">
+                                <img src="..." class="img-fluid rounded-start" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                <div class="card-body">
+                                  <h5 class="card-title">Card title</h5>
+                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    </div>
+                    <!-- Daha fazla kart buraya eklenecek -->
+                </div>
+            </div>
+        </div>
+                    
+        </main>
+    
+    <script src="wwwroot/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="wwwroot/js/index.js"></script>
+</body>
+</html>
