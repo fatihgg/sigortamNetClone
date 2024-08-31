@@ -21,17 +21,23 @@
             justify-content: center; /* Ortaya hizalamak için yatayda */
    
   
-    }
+    } /*
     .row{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .card{
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        align-items: center;
+    .comments {
+      margin-top: 20px;
+    }
+
+    .comment {
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .comment:last-child {
+      border-bottom: none;
     }
     .custom-section {
     background-image: url('https://www.techcareer.net/assets/images/call-to-actions/pages/user-stories/background.png');
@@ -89,8 +95,46 @@
     .left-column .breadcrumb{
         margin-top: 0;
     }
+    .col-12 .col-md-3 .mb-3 {
+        width: 100%;
+        max-width: 100%;
+    }
+    .ozel-boyut{
+        width: 367px;
+        max-width: 367px;
+        height: auto;
+    }  */
+    
+    .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Kartlar arasında boşluk */
+}
 
+.card {
+  flex: 1 1 30%; /* Her kart %30 genişliğe sahip olacak, 3 kart bir satıra yerleştirilecek */
+  display: flex;
+  flex-direction: column; /* Kart içindeki öğeleri dikey olarak yerleştirir */
+  border: 1px solid #ddd; /* Kartın kenarlığı */
+  border-radius: .25rem; /* Kart köşeleri yuvarlatılmış */
+  box-shadow: 0 .125rem .25rem rgba(0,0,0,.075); /* Kart gölgesi */
+}
 
+.card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Resimlerin kart alanına uygun şekilde kırpılmasını sağlar */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; /* Kart içeriğini dikey olarak yerleştirir */
+  flex: 1; /* Kartın içeriği, yüksekliğin tamamını kaplamasını sağlar */
+}
+
+.card-text {
+  margin-bottom: .5rem; /* Metinler arasında boşluk */
+}
     </style>
     <title>Bizi Katılımcılardan Dinle</title>
 </head>
@@ -182,49 +226,93 @@
         <div class="enDis">
             <div class="outer-div">
                 <div class="row">
-                    <div class="col-12 col-md-3 mb-3">
-                        <div class="card mb-3" style="max-width: 540px;">
+                    <div class="col-12 col-md-3 mb-3 ozel-boyut">
+                        <div class="card mb-3">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="..." class="img-fluid rounded-start" alt="...">
+                                <img class="testimonialImage" src="https://www.techcareer.net/_next/image?url=https%3A%2F%2Fcdn.gcp.techcareer.net%2FZeynep_Ciplak_b1c26a7216%2FZeynep_Ciplak_b1c26a7216.jpg&w=128&q=100" class="img-fluid rounded-start">
                               </div>
                               <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <div id="bodyAuthor" class="card-body d-grid">
+                                    <div class="d-block mb-3">
+                                        <p class="card-text">
+                                            Web frontend kodlamayı öğrenme sürecimde, FroundedTech Surge Bootcamp'in etkisi büyüktü. Ahmet Kaya'nın rehberliğinde, 48 saat süren 5 haftalık bu bootcamp, benim için bir dönüm noktasıydı.
+
+                                    İlk günden itibaren, HTML, CSS ve JavaScript gibi dilleri öğrenip, gerçek projeler üzerinde çalışarak teorik bilgileri pratiğe dönüştürdük. Ödev projeleri, teknik becerilerimi ve araştırma yeteneğimi geliştirdi. Hatalar yapmak, sorunlarla karşılaşmak ve bunları çözmek, kodlama sürecinin doğal bir parçasıydı ve bu sayede gerçek bir öğrenme yaşadık.
+                                    
+                                    Bootcamp sonunda, HTML ve CSS ile sayfa yapılandırma ve stil verme konularında kendime güvenim arttı. JavaScript ile etkileşimli web uygulamaları geliştirme yeteneğim de gelişti. Bu bootcamp'i tamamladığım için şanslı hissediyorum. FroundedTech Surge Bootcamp, teknik becerilerimi geliştirdi ve kendime güvenimi artırdı. Ahmet Kaya'nın rehberliği bu deneyimi unutulmaz kıldı. Bu bootcamp'i herkese tavsiye ediyorum.
+                                        </p>
+                                    </div>
+                                    <div class="sahis mt-auto d-flex align-items-center">
+                                        <div class="svgTirnak">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" fill="none">
+                                                <path class="custom-path"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="ms-1">
+                                            <p class="card-text mb-0" style="margin:0;">Zeynep Çıplak</p>
+                                            <p class="card-text"><small class="text-body-secondary">FroundedTech Surge Bootcamp</small></p>
+                                        </div>
+                                    </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                     </div>
-                    <div class="col-12 col-md-3 mb-3">
-                        <div class="card mb-3" style="max-width: 540px;">
+                    <div class="col-12 col-md-3 mb-3 ozel-boyut">
+                        <div class="card mb-3">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="..." class="img-fluid rounded-start" alt="...">
+                                <img class="testimonialImage" src="https://www.techcareer.net/_next/image?url=https%3A%2F%2Fcdn.gcp.techcareer.net%2FHasan_Okcu_ecef2f93bb%2FHasan_Okcu_ecef2f93bb.jpg&w=128&q=100" class="img-fluid rounded-start">
                               </div>
                               <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <div id="bodyAuthor" class="card-body d-grid">
+                                    <div class="d-block mb-3">
+                                        <p class="card-text">
+                                            
+5 haftalık süre içerisinde .Net Core ile ilgili oldukça yoğun bir eğitim aldım. Hocamızın konular hakkındaki bilgi birikimi de oldukça yeterliydi. Süreç içerisinde gerçek hayat projeleri geliştirdik ve sektöre en iyi şekilde hazırlandım. Techcareer e bana böyle bir eğitime katılma fırsatı verdiği için teşekkür ederim.
+                                        </p>
+                                    </div>
+                                    <div class="sahis mt-auto d-flex align-items-center">
+                                        <div class="svgTirnak">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" fill="none">
+                                                <path class="custom-path"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="ms-1">
+                                            <p class="card-text mb-0" style="margin:0;">Hasan Okcu</p>
+                                            <p class="card-text"><small class="text-body-secondary">ASP.Net Core Bootcamp</small></p>
+                                        </div>
+                                    </div>
                                 </div>
                               </div>
                             </div>
                           </div>
                     </div>
-                    <div class="col-12 col-md-3 mb-3">
-                        <div class="card mb-3" style="max-width: 540px;">
+                    <div class="col-12 col-md-3 mb-3 ozel-boyut">
+                        <div class="card mb-3">
                             <div class="row g-0">
                               <div class="col-md-4">
-                                <img src="..." class="img-fluid rounded-start" alt="...">
+                                <img class="testimonialImage" src="https://www.techcareer.net/_next/image?url=https%3A%2F%2Fcdn.gcp.techcareer.net%2FBeyza_Yueksel_65efa14e87%2FBeyza_Yueksel_65efa14e87.jpg&w=128&q=100" class="img-fluid rounded-start">
                               </div>
                               <div class="col-md-8">
-                                <div class="card-body">
-                                  <h5 class="card-title">Card title</h5>
-                                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                  <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                                <div id="bodyAuthor" class="card-body d-grid">
+                                    <div class="d-block mb-3">
+                                        <p class="card-text">
+                                            Yaptığımız projelerde iş hayatı için bizi hazırladı bu yüzden çok mutluyum. Çok verimli güzel bir süreçti emeği olan herkese teşekkür ederim.
+                                        </p>
+                                    </div>
+                                    <div class="sahis mt-auto d-flex align-items-center">
+                                        <div class="svgTirnak">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" fill="none">
+                                                <path class="custom-path"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="ms-1">
+                                            <p class="card-text mb-0" style="margin:0;">Beyza Yüksel</p>
+                                            <p class="card-text"><small class="text-body-secondary">ASP.Net Core Bootcamp</small></p>
+                                        </div>
+                                    </div>
                                 </div>
                               </div>
                             </div>
@@ -234,6 +322,66 @@
                 </div>
             </div>
         </div>
+
+        <div class="container mt-5">
+            <div class="card-container">
+              <!-- Card 1 -->
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://cdn.gcp.techcareer.net/Zeynep_Ciplak_b1c26a7216/Zeynep_Ciplak_b1c26a7216.jpg?w=256&q=100" class="img-fluid rounded-start" alt="Zeynep Çıplak">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Zeynep Çıplak</h5>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                      </p>
+                      <p class="card-text"><small class="text-body-secondary">FroundedTech Surge Bootcamp</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Card 2 -->
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://cdn.gcp.techcareer.net/Hasan_Okcu_ecef2f93bb/Hasan_Okcu_ecef2f93bb.jpg?w=256&q=100" class="img-fluid rounded-start" alt="Hasan Okcu">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Hasan Okcu</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                      <p class="card-text"><small class="text-body-secondary">ASP.Net Core Bootcamp</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Card 3 -->
+              <div class="card">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://cdn.gcp.techcareer.net/Beyza_Yueksel_65efa14e87/Beyza_Yueksel_65efa14e87.jpg?w=256&q=100" class="img-fluid rounded-start" alt="Beyza Yüksel">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Beyza Yüksel</h5>
+                      <p class="card-text">Lorem ipsum dolor sit amet.</p>
+                      <p class="card-text"><small class="text-body-secondary">ASP.Net Core Bootcamp</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Diğer kartları burada ekleyin -->
+            </div>
+          </div>
+
+        
+          
+        
                     
         </main>
     

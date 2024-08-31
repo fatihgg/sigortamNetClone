@@ -1,9 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 *, *::before, *::after{
     box-sizing: inherit;
 }
 body{
+font-family: 'Roboto', sans-serif;
 padding: 0;
 margin: 0;
 color: #1D1D1D;
@@ -368,6 +369,7 @@ h2{
     padding-right: 16px;
     padding-top: 48px;
     padding-bottom: 48px;
+    background-color: white;
 }
 .display-5 {
     font-size: 2.5rem; /* Başlığı daha büyük hale getirmek için */
@@ -990,9 +992,186 @@ hr {
     justify-content: center;
     text-align: center;
   }
+  .custom-path{
+    fill: #00C26D;
+    d: path("M19.364 11.271c.038.503.038.927.116 1.391a11.45 11.45 0 0 0 1.854 4.945c.463.734 1.043 1.352 1.66 1.931.619.54 1.275 1.043 2.01 1.43.193.115.424.193.618.308.116.039.193.116.309.155.425.154.85.309 1.274.425.116.038.232.038.348.077.386.077.54-.425.232-.618-.078-.039-.155-.116-.27-.154-.31-.194-.58-.425-.85-.657a3.5 3.5 0 0 0-.387-.348 3.5 3.5 0 0 1-.348-.386c-.463-.502-.811-1.082-1.12-1.661-.309-.58-.502-1.198-.656-1.816-.039-.116-.039-.231-.078-.309-.038-.193.116-.386.348-.386h4.906a3.67 3.67 0 0 0 3.67-3.67V5.67A3.67 3.67 0 0 0 29.33 2h-6.258a3.67 3.67 0 0 0-3.67 3.67v4.017c0 .193 0 .425-.038.618v.966M3 11.271c.039.503.039.927.116 1.391a11.45 11.45 0 0 0 1.854 4.945c.464.734 1.043 1.352 1.661 1.931.618.54 1.275 1.043 2.009 1.43.193.115.425.193.618.308.116.039.193.116.31.155.424.154.849.309 1.274.425.116.038.232.038.347.077.387.077.541-.425.232-.618-.077-.039-.154-.116-.27-.154-.31-.194-.58-.425-.85-.657a3.5 3.5 0 0 0-.387-.348 3.5 3.5 0 0 1-.347-.386c-.464-.502-.812-1.082-1.12-1.661-.31-.58-.503-1.198-.657-1.816-.039-.116-.039-.231-.077-.309-.039-.193.115-.386.347-.386h4.907a3.67 3.67 0 0 0 3.67-3.67V5.67A3.67 3.67 0 0 0 12.966 2H6.708a3.67 3.67 0 0 0-3.67 3.67v4.017c0 .193 0 .425-.038.618v.966")
+  }
   .buyukResim {
     position: relative;
     width: 100%;
     height: 400px;
     background:url('https://www.techcareer.net/assets/images/call-to-actions/pages/user-stories/background.png');
   }
+  .custom-section {
+    background-image: url('https://www.techcareer.net/assets/images/call-to-actions/pages/user-stories/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-height: 400px;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 100%;
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    }
+    .left-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 0;
+    }
+
+    .left-column h1 {
+    margin-top: 20px;
+    color:white;
+    font-weight: 600;
+    }
+    .left-column span{
+        color:#00C26D;
+        font-weight: 500;
+    }
+
+    .vector-image {
+    width: 320px;
+    height: 250px;
+    }
+    .custom-section .left-column .breadcrumb a {
+        color:white;
+        text-decoration: none;
+    }
+    .custom-section .left-column p {
+        color:white;
+        font-size: 1rem;
+        font-family: Roboto, sans-serif;
+        line-height: 1.5;
+        display: flex;
+    }
+    .custom-section .left-column button {
+        color:white;
+        font-size: 1rem;
+        background-color: #00C26D;
+        width: 150px;
+        height: 30px;
+    }
+    .left-column .breadcrumb{
+        margin-top: 0;
+    }
+    .col-12 .col-md-3 .mb-3 {
+        width: 100%;
+        max-width: 100%;
+    }
+    main{
+        background-color:#F6F6F6 ;
+    }
+    .enDis {
+            justify-content: center; /* Ortaya hizalamak için yatayda */
+    }
+    .disDiv{
+            padding: 0 24px;
+    }
+    .outer-div {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    .yesilAlan{
+        background-color: #00C26D;
+    }
+    .yesilAlanic{
+    width: 100%;
+    margin-left: auto;
+    box-sizing: border-box;
+    margin-right: auto;
+    display: block;
+    padding-left: 16px;
+    padding-right: 16px;
+    }
+    .yesilAlanic2 {
+    box-sizing: border-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    }
+    .yesilAlanMetin{
+        flex-basis: 100%;
+        -webkit-box-flex: 0;
+        flex-grow: 0;
+        max-width: 100%;
+    }
+    .yesilAlanH2{
+        font-size: 1.5625rem;
+        font-weight: 500;
+        letter-spacing: 0.25;
+        line-height: 1.2;
+        text-align: center;
+        color: white;
+    }
+    nav a {
+        text-decoration: none;
+        color: wheat;
+    }
+    .page-link:hover {
+      background-color: #ECECEC; /* Arka plan rengini değiştirir */
+      color: #1D1D1D; /* Metin rengini değiştirir */
+      text-decoration: none; /* Alt çizgiyi kaldırır */
+    }
+    .page-item .page-link{
+        color:#1D1D31;
+        width: 40px;
+    }
+    .page-item.active .page-link {
+      background-color: #00C26D; /* Aktif sayfanın arka plan rengi */
+      color: #fff; /* Aktif sayfanın metin rengi */
+      border-color: #00C26D; /* Aktif sayfanın kenarlık rengi */
+    }
+    .pagination-container {
+      display: flex;
+      justify-content: center; /* Yatayda ortalar */
+      align-items: center; /* Dikeyde ortalar */
+    }
+    .page-item.disabled .page-link {
+      color: #6c757d; /* "..." butonunun metin rengi */
+      pointer-events: none; /* Tıklanamaz yapar */
+      background-color: transparent; /* Arka plan rengini kaldırır */
+      border: none; /* Kenarlık kaldırılır */
+    }
+    .quote-card {
+      border: 1px solid #dee2e6;
+      border-radius: .25rem;
+      margin: 1rem 0;
+      background-color: #f8f9fa;
+      max-width: 1200px;
+      padding-left: 24px;
+      padding-right:24px;
+      align-items: center;
+      justify-content: center;
+
+    }
+    .quote-header {
+      font-weight: bold;
+      cursor: pointer;
+      padding: 0.75rem 1.25rem;
+      margin: 0;
+      border-bottom: 1px solid #dee2e6;
+    }
+    .quote-content {
+      padding: 1rem;
+    }
+    .card .card-body .row .col-6 div:last-of-type {
+    font-weight: bold;
+  }
+.users{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
