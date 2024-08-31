@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="wwwroot/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="wwwroot/img/favicon.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="wwwroot/css/styles.css">
+    <title>Techcareer.net Giriş Yap</title>
+    <style>
+    html, body {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden; /* Dikey scroll'u kaldırır */
+    height: 100%; /* Tam ekran yüksekliği */
+    }
+
+    .d-flex {
+        width: 100%;
+        height: 100vh; /* Tam ekran yüksekliği */
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        }
+
+        .techcareer-left-panel-image {
+        width: 100%;
+        max-height: 100vh; /* Ekranın yüksekliğini aşmasını engeller */
+        object-fit: cover; /* Resmi kapsayıcıya sığdırır */
+        }
+
+    .img {
+        overflow: hidden; /* Resmin kapsayıcı dışına taşmasını engeller */
+        height: 100%; /* Kapsayıcının tam yüksekliğini alır */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .sign-left__title {
+    margin-bottom: 32px;
+    }
+    .sign-left__title, .sign-left__title a {
+        font-weight: bold;
+        color: #1d1d1d;
+        font-size:1.5rem;
+    }
+    .sign-ext-btn-wrapper {
+    padding: 0px 10px;
+    }
+    
+    .form-content {
+    text-align: center;
+}
+
+.loginButon {
+    display: flex;
+    justify-content: center;
+    gap: 10px; 
+}
+
+    button {
+        padding: 0; 
+        cursor: pointer; 
+        width: 100%;
+        border: none;
+        border-radius: 4px;
+    }
+
+    button:hover{
+        border: 1px solid;
+       border-color: #293349;
+    }
+    .form-control{
+        border:none;
+    }
+    
+
+.sign-ext-btn {
+    display: inline-flex;
+    align-items: center; /* İçerikleri dikey olarak ortalar */
+    justify-content: center; /* İçerikleri yatay olarak ortalar */
+    padding: 12px 5px; /* Butona iç boşluk ekler */
+    border: 1px solid #F2F2F2; /* Butona sınır ekler */
+    border-radius: 4px; /* Buton köşelerini yuvarlar */
+    text-decoration: none; /* Linkin altını çizer */
+    color: #333; /* Yazı rengini ayarlar */
+    background-color: #F2F2F2; /* Arka plan rengini ayarlar */
+}
+
+.sign-ext-btn img {
+    max-width: 20px; /* Resimlerin genişliğini sınırlar */
+    max-height: 20px; /* Resimlerin yüksekliğini sınırlar */
+    margin-right: 8px; /* Resim ve metin arasına boşluk ekler */
+}
+
+    
+    a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    }
+    .hr-text {
+    margin-top:10px;
+    position: relative;
+    border: none;
+    margin: 25px 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 2.5em; /* Metin yüksekliği ile uyumlu */
+}
+
+.hr-text:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Çizgi kalınlığı */
+    background: #d8d8d8; /* Çizgi rengi */
+    z-index: 1;
+}
+
+.hr-text:after {
+    content: attr(data-content);
+    position: relative;
+    display: inline-block;
+    padding: 0 25px;
+    color: #818078; /* Metin rengi */
+    background-color: #fcfcfa; /* Arka plan rengi */
+    z-index: 2;
+}
+.input-group{
+    margin: 0;
+}
+.form-group {
+    width: 100%; /* Form grup genişliğini tam kullan */
+    border: solid 0.1px #d8d8d8;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.input-group-wrapper {
+    width: 100%; /* Input group wrapper genişliğini tam kullan */
+}
+
+.input-group {
+    width: 100%; /* Input group genişliğini tam kullan */
+    display: flex; /* İçeriği esnek düzenle */
+}
+
+.input-group-text {
+    display: flex;
+    align-items: center; /* İçeriği dikeyde ortala */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="d-flex d-row">
+    <div class="d-none d-md-block col-4">
+        <div class="flex-row">
+            <div class="img" style="object-fit: fill;">
+            <img src="https://login.techcareer.net/images/techcareer-left-panel.svg" class="techcareer-left-panel-image">
+        </div>
+        </div>
+    </div>
+    <div class="col d-flex align-items-center justify-content-center">
+            <div class="container col-sm-11 col-md-9 col-lg-8 col-xl-6">
+                <form action="" class="form-control">
+                    <div class="form-header">
+                        <div class="d-none d-md-block">
+                            <h2 class="sign-left__title"> techcareer.net’e Giriş Yap</h2>
+                        </div>
+                    </div>
+                    <div class="form-content">
+                        <div class="form-group" style="justify-content: center; align-items: center;">
+                            <div class="loginButon">
+                                <button><a href="" class="sign-ext-btn"><span><img src="https://login.techcareer.net/images/icons/github.svg" alt="Github" srcset=""></span>Github</a></button>
+                                <button><a class="sign-ext-btn"><span><img src="https://login.techcareer.net/images/icons/google.svg" alt="Google"></span>Google</a></button></div>
+                        </div>
+                        <hr class="hr-text" data-content="YA DA">
+                        <div class="form-group">
+                            
+                                <div class="input-group">
+                                            <span class="input-group-text" id="basic-addon1">
+                                                <svg class="boxRoot css-vubbuv" focusable="false" color="#878787" aria-hidden="true" viewBox="0 0 24 24" data-testid="EmailIcon"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4-8 5-8-5V6l8 5 8-5z"></path></svg>
+                                            </span>
+                                            <input type="email" class="form-control" placeholder="E-posta" aria-label="Email" aria-describedby="basic-addon1">
+                                </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="form-bottom">c</div>
+                </form>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+</body>
+</html>
